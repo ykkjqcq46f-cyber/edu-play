@@ -21,11 +21,22 @@ button {
   margin: 10px;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background: #0984e3;
+  color: white;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #74b9ff;
 }
 
 input {
   padding: 8px;
   margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 #game {
@@ -34,23 +45,29 @@ input {
 
 .card {
   display: inline-block;
-  width: 160px;
-  height: 80px;
+  width: 180px;
+  min-height: 80px;
   margin: 10px;
-  line-height: 80px;
-  background: white;
-  border: 2px solid #34495e;
+  padding: 5px;
+  line-height: normal;
+  text-align: center;
+  background: linear-gradient(135deg, #ffe066, #fab1a0);
+  border: 2px solid #2d3436;
+  border-radius: 10px;
   cursor: pointer;
   user-select: none;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s;
+  word-wrap: break-word;
 }
 
-.hidden {
-  background: #34495e;
-  color: #34495e;
+.card:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #fab1a0, #ffe066);
 }
 
 .matched {
-  background: #2ecc71;
+  background: linear-gradient(135deg, #55efc4, #00b894);
   color: white;
   cursor: default;
 }
